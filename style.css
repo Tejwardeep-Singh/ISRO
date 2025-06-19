@@ -8,13 +8,14 @@
 html,body{
     height: 100%;
     width: 100%;
-    overflow-x: hidden;
     background-color:black;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 main{
+    height:auto;
     width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -141,8 +142,7 @@ main{
     color: white;
     font-weight: 900;
     font-size: xx-large;
-    transition-duration: 1s;
-    transition-timing-function: all ease;
+    transition: 1s all ease;
     cursor: pointer;
     pointer-events: all;
 }
@@ -224,8 +224,7 @@ main{
     align-items: center;
     position: relative;
     border-radius: 50px;
-    transition-duration: 1s;
-    transition-timing-function: all ease;
+    transition: 1s all ease;
 }
 
 #p1{
@@ -366,8 +365,7 @@ main{
     text-decoration: underline;
     font-size: larger;
     font-weight: 800;
-    transition-duration: 1s;
-    transition-timing-function: all ease;
+    transition: 1s all ease;
 }
 
 .portal-text a:hover{
@@ -432,8 +430,7 @@ main{
     border: solid white 1px;
     border-radius: 25px;
     padding: 3%;
-    transition-duration: 1s;
-    transition-timing-function: all ease;
+    transition: 1s all ease;
 }
 
 .chandrayaan img,.mission-header{
@@ -442,8 +439,7 @@ main{
 
 .chandrayaan img{
     height: auto;
-    transition-duration: 1s;
-    transition-timing-function: all ease;
+    transition: 1s all ease;
 }
 
 #page4 h1{
@@ -669,6 +665,7 @@ main{
 }
 
 .member img{
+    width: 40vw;
     object-fit: cover;
     object-position: center;
     height: 100%;
@@ -859,8 +856,7 @@ main{
     align-items: center;
     padding:1.5vh;
     border-bottom: solid wheat 1px;
-    transition-duration: 0.5s;
-    transition-timing-function: all ease;
+    transition: 1s all ease;
     cursor: pointer;
 }
 
@@ -1076,7 +1072,7 @@ main{
     border-radius: 50%;
     position: absolute;
     top:25%;
-    left:10;
+    left:10%;
 }
 
 #pg10-blur-bottom{
@@ -1146,7 +1142,7 @@ main{
     }
     .portal-container-1{
         width: 90vw;
-        animation-direction: 15s;
+        animation-direction: alternate;
     }
     #portal-container{
         gap: 8vw;
