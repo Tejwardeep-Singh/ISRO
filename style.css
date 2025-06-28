@@ -18,7 +18,9 @@ main{
     overflow-x: hidden;
 }
 
-
+.active{
+    color: #00bcd4;
+}
 #page1{
     height: 100vh;
     width: 100vw;
