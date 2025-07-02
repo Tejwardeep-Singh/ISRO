@@ -190,8 +190,6 @@ nav:hover{
     background-color:#00bcd4;
     border-radius: 50%;
 }
-
-
 @media only screen and (max-width: 1200px){
     .nav{
         width: 90%;

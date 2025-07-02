@@ -9,7 +9,7 @@ html,body{
     height: 100%;
     width: 100%;
     background-color:black;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 main{
@@ -39,23 +39,33 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 #page1 h1{
-    font-size: 30vh;
+    font-size: 24vh;
     font-weight: 900;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Orbitron', sans-serif;
     position: absolute;
     top: 10%;
     color: white;
     text-shadow: 0 8px 16px rgba(0, 0, 0, 0.647);
     overflow: hidden;
+    letter-spacing: -10px;
 }
 
 #page1 h1 span{
     display: inline-block;
 }
-
+#page1 h3{
+    font-size: 4vh;
+    font-weight: 900;
+    font-family: exo 2, sans-serif;
+    position: absolute;
+    top: 40%;
+    color: white;
+    text-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
 #page1 video{
     height: 100%;
     width: 100%;
@@ -150,7 +160,7 @@ main{
 }
 
 .str-r a:hover{
-    color: yellow;
+    color: #00bcd4;
 }
 
 #panel{
@@ -253,11 +263,6 @@ main{
     object-fit: cover;
     object-position: center;
 }
-
-.p:hover{
-    width: 50%;
-}
-
 #p2 h2{
     font-size: xx-large;
     font-weight: 900;
@@ -271,15 +276,11 @@ main{
 }
 
 #page2 h1{
-    font-size: 8vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 10vh;
     font-weight: 900;
-    background: linear-gradient(to right,red,blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
-    animation: anime 1s infinite alternate;
+    color: #00bcd4;
+    -webkit-text-stroke: 2px #00bcd4;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #page3{
@@ -368,10 +369,11 @@ main{
     font-size: larger;
     font-weight: 800;
     transition: 1s all ease;
+    font-family: exo 2, sans-serif;
 }
 
 .portal-text a:hover{
-    color: yellow;
+    color: #00bcd4;
     text-decoration: overline;
 }
 
@@ -379,12 +381,9 @@ main{
     font-size: 8vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    background: linear-gradient(to right,red,blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
-    animation: anime 1s infinite alternate;
+    color: #00bcd4;
+    -webkit-text-stroke: 2px #00bcd4;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #page4{
@@ -445,25 +444,22 @@ main{
 }
 
 #page4 h1{
-    font-size: 8vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 6vh;
     font-weight: 900;
-    background: linear-gradient(to right,red,blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
-    animation: anime 1s infinite alternate;
+    color: #00bcd4;
+    -webkit-text-stroke: 2px #00bcd4;
+    font-family: 'Orbitron', sans-serif;
 }
 
 .chandrayaan p{
     color: white;
     font-size: large;
     font-weight: 400;
+    font-family: exo 2, sans-serif;
 }
 
 .chandrayaan span a{
-    color: red;
+    color:#00bcd4;
     font-weight: 900;
     text-align: center;
     font-size: xx-large;
@@ -482,7 +478,7 @@ main{
     color: white;
     position: absolute;
     text-align: center;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: rajdhani, sans-serif;
 }
 
 @keyframes anime {
@@ -506,12 +502,9 @@ main{
     font-size: 8vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    background: linear-gradient(to right,red,blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
-    animation: anime 1s infinite alternate;
+    color: #00bcd4;
+    -webkit-text-stroke: 2px #00bcd4;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #rocket-container{
@@ -551,7 +544,7 @@ main{
     font-size: 6vh;
     font-weight:900;
     position: absolute;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: exo 2, sans-serif;
     left:0;
     bottom:0;
     text-align: center;
@@ -617,12 +610,9 @@ main{
     font-size: 8vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    background: linear-gradient(to right,red,blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
-    animation: anime 1s infinite alternate;
+    color: #00bcd4;
+    -webkit-text-stroke: 2px #00bcd4;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #leadership{
@@ -689,12 +679,9 @@ main{
     font-size: 8vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    background: linear-gradient(to right,red,blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
-    animation: anime 1s infinite alternate;   
+    color: #00bcd4;
+    -webkit-text-stroke: 2px #00bcd4;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #timeline-container{
@@ -784,6 +771,7 @@ main{
     border: solid white 2px;
     padding: 1% 2%;
     background-color: salmon;
+    font-family: 'Exo 2', sans-serif;
 }
 
 .event h4{
@@ -792,6 +780,7 @@ main{
     color: white;
     border: dotted white 1px;
     padding: 2%;
+    font-family: 'Rajdhani', sans-serif;
 }
 
 .horizontal-ruler{
@@ -831,12 +820,9 @@ main{
     font-size: 8vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    background: linear-gradient(to right,red,blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
-    animation: anime 1s infinite alternate;   
+    color: #00bcd4;
+    -webkit-text-stroke: 2px #00bcd4;
+    font-family: 'Orbitron', sans-serif;
 }
 
 #stats-container{
@@ -875,7 +861,7 @@ main{
 }
 
 .stats:hover{
-    background-color: salmon;
+    background-color: #00bcd4;
     border-radius: 50px;
     border: solid wheat 1px;
 }
@@ -887,11 +873,11 @@ main{
 }
 
 #footer{
-    height: 50vh;
+    height: fit-content;
     width: 100vw;
-    padding: 5%;
+    padding: 2%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: start;
     background-image:url(images/earth-bg.jpg);
     background-position:top;
@@ -901,6 +887,8 @@ main{
 }
 
 .fl{
+    height: 30vh;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -908,12 +896,14 @@ main{
     gap: 2vh;
     background-color: rgba(9, 9, 9, 0.375);
     backdrop-filter: blur(5px);
-    border: solid black 2px;
+    border: solid #00bcd4 2px;
     padding: 2%;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .fc{
+    height: 30vh;
+    width: 20vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -921,16 +911,20 @@ main{
     gap: 1vh;
     background-color: rgba(9, 9, 9, 0.375);
     backdrop-filter: blur(5px);
-    border: solid black 2px;
+    border: solid #00bcd4 2px;
     padding: 2%;
-    border-radius: 50px;
+    border-radius: 20px;
 }
 
 .fr{
+    height: 30vh;
+    width: 30vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid #00bcd4 2px;
+    border-radius: 20px;
 }
 
 #fc-n{
@@ -956,7 +950,7 @@ main{
 #footer h2{
     font-size: xx-large;
     font-weight: 900;
-    color: chartreuse;
+    color: #00bcd4;
     text-decoration: underline;
 }
 
@@ -982,12 +976,9 @@ main{
     font-size: 8vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 900;
-    background: linear-gradient(to right,red,blue);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    text-shadow: 0 0 60px rgba(255, 0, 0, 0.62);
-    animation: anime 1s infinite alternate;   
+    color: #00bcd4;
+    -webkit-text-stroke: 2px #00bcd4;
+    font-family: 'Orbitron', sans-serif; 
 }
 
 #mission-container{
@@ -1102,7 +1093,7 @@ main{
     align-items: center;
     justify-content: center;
     padding: 0.5% 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: exo 2, sans-serif;
 }
 #copywright h3{
     font-size: 1.8vh;
@@ -1113,9 +1104,12 @@ main{
 @media only screen and (max-width: 1200px){
 
     #page1 h1{
-        font-size: 25vw;
+        font-size: 18vw;
     }
-
+    #page1 h3{
+        font-size: 5vw;
+        top: 20%;
+    }
     #page2 h1{
         font-size: 15vw;
     }
@@ -1124,6 +1118,39 @@ main{
     }
     #projects{
         flex-wrap: wrap;
+        height: auto;
+    }
+    .p{
+        height: 40vh;
+        width: 45%;
+    }
+    #p1 img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #p2{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        bottom:-100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #1111119b;
+        backdrop-filter: blur(10px);
+    }
+    #p2 h2{
+        font-size: larger;
+        font-weight: 900;
+        color: yellow;
+    }
+    #p2 h3{
+        font-size: medium;
+        font-weight: 500;
+        color: white;
     }
 
     #projects h2{
@@ -1134,7 +1161,6 @@ main{
         font:medium sans-serif;
         text-align: center;
     }
-
     #blur{
         height: 3vw;
     }
@@ -1233,6 +1259,79 @@ main{
         font-size:small;
         color: white;
     }
+    #page10{
+        height: auto;
+    }
+    #page10 h1{
+        font-size:8vw;
+    }
+    #mission-container{
+        height: 80vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+    }
+    #page5{
+        height: auto;
+    }
+    #page5 a{
+        font-size:12vw;
+    }
+    #rocket-container{
+        height: auto;
+        width: 100vw;
+        overflow-x: scroll;
+        scrollbar-width: none;
+    }
+    #rockets{
+        height: auto;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5vw;
+        transform: translateX(0);
+    }
+    .rocket{
+        height: 50vh;
+        width: 50vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position:relative;
+    }
+    .rocket img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position:top;
+    }
+    #page6{
+        height: auto;
+    }
+    #video2{
+        height: 100%;
+        width: 100%;
+    }
+    #video2 video{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    #page7 h1{
+        font-size: 8vw;
+    }
+    #leadership{
+        width: 80vw;
+    }
+    #leadership img{
+        width: 100%;
+        height: auto;
+    }
     #page10 h1{
         font-size: 12vw;
     }
@@ -1250,10 +1349,15 @@ main{
     }
 
     .fr{
+        height: fit-content;
         width:90vw;
-        justify-content: start;
-        align-items: start;
+        justify-content: center;
+        align-items: center;
         border-radius: 0;
+        padding: 0.5%;
+    }
+    .fr iframe{
+        width: 100%;
     }
 
     #footer p{
@@ -1261,6 +1365,7 @@ main{
     }
 
     .fl{
+        height: fit-content;
         width:90vw;
         border-radius: 0;
         padding: 2% 5%;
@@ -1268,6 +1373,7 @@ main{
     }
 
     .fc{
+        height: fit-content;
         width:90vw;
         border-radius:0;
         padding: 1%;

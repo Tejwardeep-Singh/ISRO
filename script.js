@@ -7,6 +7,12 @@ function navbar(){
         delay:2,
         stagger:0.2
     })
+    tl.from("#page1 h3",{
+        opacity:0,
+        duration:0.8,
+        delay:0.1,
+        stagger:0.2
+    })
     tl.from("#circle",{
         opacity:0,
         rotate:45,
