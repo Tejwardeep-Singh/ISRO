@@ -2,3 +2,15 @@ color1:#1b2735
 color2:#2c5364
 color3:#00bcd4
 color4:linear-gradient(to top, #0f2027, #203a43, #2c5364);
+
+
+index
+missions
+images
+contact
+CENTRES
+UPDATES
+vision
+LAUNCHERS
+timeline
+leadership

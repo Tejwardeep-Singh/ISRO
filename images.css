@@ -9,9 +9,7 @@ html,body{
     height: 100%;
     width: 100%;
     background-color: #1b2735;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
 main{
     height:auto;
     width: 100%;
@@ -27,6 +25,7 @@ nav{
     transition-duration:0.5s;
     transition-timing-function: all ease-out;
     background-color:transparent;
+    background-color: #00bcd4;
 }
 
 .nav{
@@ -72,10 +71,10 @@ nav{
 }
 
 #nr a{
-    color: #dadada;
+    color: #1b2735;
     font-size: large;
     font-weight: 500;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: exo, sans-serif;
     text-decoration: underline;
     transition-duration:0.5s;
     transition-timing-function: all ease-out;
@@ -115,8 +114,8 @@ nav:hover{
 #ipage1 h1{
     font-size: 10vh;
     font-weight: 900;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #00bcd4;
+    font-family: orbitron, sans-serif;
 }
 #ipage2{
     height: 100vh;
@@ -130,8 +129,8 @@ nav:hover{
 #ipage2 h1{
     font-size: 10vh;
     font-weight: 900;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #00bcd4;
+    font-family: orbitron, sans-serif;
 }
 #ipage3{
     height: 100vh;
@@ -141,12 +140,13 @@ nav:hover{
     justify-content: center;
     flex-direction: column;
     padding: 10vh 0 0 0;
+    
 }
 #ipage3 h1{
     font-size: 10vh;
     font-weight: 900;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: #00bcd4;
+    font-family: orbitron, sans-serif;
 }
 #pg1-container{
     height: 80%;
@@ -175,6 +175,7 @@ nav:hover{
     text-align: center;
     margin: 0;
     padding: 0.5vh 0;
+    font-family: exo, sans-serif;
 
 }
 .img-box img{
@@ -192,13 +193,24 @@ nav:hover{
 }
 @media only screen and (max-width: 1200px){
     .nav{
-        width: 90%;
+        width: 100%;
+        background-color: #00bcd4;
     }
     #nr{
-        gap: 2vh;
+        width: 50%;
+        gap: 1vh;
+    }
+    #nl{
+        width: 50%;
+        padding: 0;
+        justify-content: start;
+    }
+    #nl img{
+        padding:0;
     }
     #nr a{
-        font-size: medium;
+        font-size:3vw;
+        color: #1b2735;
     }
     #ipage1 h1{
         height: fit-content;
@@ -216,9 +228,10 @@ nav:hover{
         padding: 0;
     }
     #ipage1{
-        height: 100%;
+        height: auto;
         width: 100%;
         padding: 20% 0 0 0;
+        overflow-x: scroll;
     }
     #ipage2{
         height: 100%;
@@ -232,13 +245,18 @@ nav:hover{
     }
     #pg1-container{
         height: auto;
-        width: 80%;
+        width: 100%;
         padding: 5% 0;
+        overflow-x: scroll;
+        white-space: nowrap;
+
     }
     .img-box{
-        width: 80%;
+        width: 50%;
         height:auto;
         margin: 2vh 0;
+        flex-shrink: 0;
+        transform: translateX(80vw);
     }
     .img-box img{
         height: 15vh;
@@ -250,5 +268,4 @@ nav:hover{
     #line{
         width: 60%;
     }
-    
 }

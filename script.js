@@ -11,7 +11,6 @@ function navbar(){
         opacity:0,
         duration:0.8,
         delay:0.1,
-        stagger:0.2
     })
     tl.from("#circle",{
         opacity:0,

@@ -64,6 +64,7 @@ main{
     padding: 2% 0;
     position: relative;
     overflow: hidden;
+    transform: translateY(10vh);
 }
 #cpg1-img{
     position: absolute;
@@ -79,7 +80,7 @@ main{
     font-size: 8vh;
     font-weight:900;
     color:#00bcd4;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:orbitron, sans-serif;
     gap:1vh;
     display: flex;
     justify-content: center;
@@ -120,7 +121,7 @@ main{
 }
 
 .contact-left-title h2{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: exo, sans-serif;
     font-weight: 900;
     font-size: xx-large;
     color:#1b2735;

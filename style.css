@@ -677,7 +677,7 @@ main{
 
 #page8 h1{
     font-size: 8vh;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: orbitron, sans-serif;
     font-weight: 900;
     color: #00bcd4;
     -webkit-text-stroke: 2px #00bcd4;
@@ -770,7 +770,7 @@ main{
     color: black;
     border: solid white 2px;
     padding: 1% 2%;
-    background-color: salmon;
+    background-color: #00bcd4;
     font-family: 'Exo 2', sans-serif;
 }
 
