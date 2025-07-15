@@ -249,6 +249,9 @@ function page6(){
     vid.addEventListener("touchend",function(){
         vid.pause();
     })
+    vid.addEventListener("click",function(){
+        vid.muted=!vid.muted;
+    })
 }
 page6()
 function page7(){

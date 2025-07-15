@@ -264,13 +264,14 @@ main{
     object-position: center;
 }
 #p2 h2{
-    font-size: xx-large;
+    font-size: x-large;
     font-weight: 900;
     color: yellow;
+    text-align: center;
 }
 
 #p2 h3{
-    font-size: x-large;
+    font-size: large;
     font-weight: 500;
     color: white;
 }
@@ -539,6 +540,7 @@ main{
     width: 100%;
     object-fit: cover;
     object-position:top;
+    border-radius: 50px;
 }
 .rocket h3{
     font-size: 6vh;
@@ -550,7 +552,9 @@ main{
     text-align: center;
     height: fit-content;
     width: 100%;
+    background-color: #00bbd45b;
     backdrop-filter: blur(5px);
+color: #1b2735;
 }
 
 #page6{
@@ -675,7 +679,7 @@ main{
     gap: 10vh;
 }
 
-#page8 h1{
+#page8 a{
     font-size: 8vh;
     font-family: orbitron, sans-serif;
     font-weight: 900;
@@ -851,13 +855,15 @@ main{
 .stats h2{
     font-size: xx-large;
     font-weight: 900;
-    color: yellow;
+    color: #00bcd4;
+    font-family:exo,sans-serif;
 }
 
 .stats h3{
     font-size:xx-large;
     font-weight: 500;
-    color: yellow;
+    color: wheat;
+    font-family: rajdhani,sans-serif;
 }
 
 .stats:hover{
@@ -1262,7 +1268,7 @@ main{
     #page8{
         height: auto;
     }
-    #page8 h1{
+    #page8 a{
         font-size: 10vw;
     }
 

@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon_io/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap" rel="stylesheet">
@@ -21,13 +21,13 @@
             <div class="nav">
                 <div id="nl" class="nl">
                     <div class="nl-img">
-                        <img src="images/isro-logo.png" alt="">
+                        <img src="/public/images/isro-logo.png" alt="">
                     </div>
                 </div>
                 <div id="nr" class="nr">
-                    <a href="index.html" class="nr-1">HOME</a>
-                    <a href="images.html" class="active">IMAGES</a>
-                    <a href="centre.html">CENTRES</a>
+                    <a href="../index.html" class="nr-1">HOME</a>
+                    <a href="/views/images.html" class="active">IMAGES</a>
+                    <a href="/views/centre.html">CENTRES</a>
                 </div>
                 <div id="menu">
                     <i class="fa-solid fa-bars"></i>
@@ -36,14 +36,71 @@
         </nav>
         <div id="lpage1">
             <h1>Launchers</h1>
-            <div id="lpg1-container">
+            <div class="lpg1-container">
                 <h2>Current Launchers</h2>
-                <div class="launcher-box">
-                    <img src="../public/images/sslv.jpg" alt="image here">
+                <div class="r-panel">
+                    <h3 id="cb1">SSLV</h3>
+                    <h3 id="cb2">PSLV</h3>
+                    <h3 id="cb3">GSLV</h3>
+                    <h3 id="cb4">LVM-3</h3>
+                </div>
+                <div class="lpg1-container1">
+                    <div class="launcher-box" id="r-sslv">
+                    <img src="../public/images/rockets/3d-sslv.png" alt="image here">
                     <div class="launcher-info">
                         <h3>SSLV</h3>
                         <p>The SSLV (Small Satellite Launch Vehicle) is a new launch vehicle developed by ISRO to cater to the growing demand for small satellite launches. It is designed to provide quick and cost-effective access to space for small payloads.</p>
                         <h4>First Flight: 2022</h4>
+                    </div>
+                    </div>
+                    <div class="launcher-box" id="r-pslv">
+                        <img src="../public/images/rockets/3d-pslv.png" alt="image here">
+                        <div class="launcher-info">
+                            <h3>PSLV</h3>
+                            <p>The PSLV (Polar Satellite Launch Vehicle) is one of ISRO’s most successful and reliable launch vehicles. Known for its versatility, it is capable of launching satellites into Sun-synchronous, polar, and geostationary orbits. PSLV has also carried out international commercial missions and interplanetary launches.</p>
+                            <h4>First Flight: 1993</h4>
+                        </div>
+                    </div>
+                    <div class="launcher-box" id="r-gslv">
+                        <img src="../public/images/rockets/3d-gslv.png" alt="image here">
+                        <div class="launcher-info">
+                            <h3>GSLV</h3>
+                            <p>The GSLV (Geosynchronous Satellite Launch Vehicle) is ISRO's medium-lift launch vehicle designed to deploy satellites into geostationary orbits. It uses a combination of solid, liquid, and cryogenic propulsion stages and plays a crucial role in launching communication and weather satellites.</p>
+                            <h4>First Flight: 2001</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lpg1-container">
+                <h2>Launchers Under Development</h2>
+                <div class="r-panel">
+                    <h3 id="fb1">HRLV</h3>
+                    <h3 id="fb2">RLV-TD</h3>
+                    <h3 id="fb3">TD</h3>
+                </div>
+                <div class="lpg1-container1">
+                    <div class="launcher-box" id="r-hrlv">
+                    <img src="../public/images/rockets/3d-sslv.png" alt="image here">
+                    <div class="launcher-info">
+                        <h3>HRLV</h3>
+                        <p>The HRLV (Human RatedLaunch Vehicle) is one of ISRO’s most mbitious future launch vehicles.It will be capable of taking humans to space.Testing of this rocket is underway and it's first trial is scheduled for late 2025.</p> 
+                    </div>
+                    </div>
+                    <div class="launcher-box" id="r-rlv">
+                        <img src="../public/images/rockets/3d-pslv.png" alt="image here">
+                        <div class="launcher-info">
+                            <h3>RLV-TD</h3>
+                            <p>The RLV-TD (Reusable Launch Vehicle – Technology Demonstrator) is India’s first attempt at creating a winged body spaceplane. It aims to demonstrate key technologies for future reusable spacecraft, including autonomous landing, reentry heat protection, and hypersonic flight.</p>
+                            <h4>First Flight: 2016</h4>
+                        </div>
+                    </div>
+                    <div class="launcher-box" id="r-td">
+                        <img src="../public/images/rockets/3d-gslv.png" alt="image here">
+                        <div class="launcher-info">
+                            <h3>Scramjet Engine TD</h3>
+                            <p>The Scramjet Engine Technology Demonstrator is an experimental mission by ISRO to test air-breathing engine technology. This propulsion system uses atmospheric oxygen for combustion at hypersonic speeds, potentially enabling more efficient access to space.</p>
+                            <h4>First Test Flight: 2016</h4>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -60,10 +117,10 @@
                 <div class="quick-links">
                     <h2>QUICK LINKS</h2>
                     <div id="fc-n">
-                        <a href="index.html">HOME</a>
-                        <a href="images.html">IMAGES</a>
+                        <a href="../index.html">HOME</a>
+                        <a href="/views/images.html">IMAGES</a>
                         <a href="#">PROJECTS</a>
-                        <a href="contact.html">CONTACT US</a>
+                        <a href="/views/contact.html">CONTACT US</a>
                         <a href="#">UPDATES</a>
                     </div>
                 </div>
@@ -79,6 +136,6 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="/public/javascripts/script.js"></script>
+    <script src="/public/javascripts/launcher.js"></script>
 </body>
 </html>

@@ -1,0 +1,4 @@
+User-agent: Tejwardeep Singh
+Allow: /
+
+Sitemap: https://rawjet.netlify.app/sitemap.xml

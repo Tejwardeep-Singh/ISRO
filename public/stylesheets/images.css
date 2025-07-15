@@ -8,7 +8,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: #1b2735;
+    background-color: #0C1318;
 }
 main{
     height:auto;
@@ -25,7 +25,6 @@ nav{
     transition-duration:0.5s;
     transition-timing-function: all ease-out;
     background-color:transparent;
-    background-color: #00bcd4;
 }
 
 .nav{
@@ -68,6 +67,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     gap: 4vh;
+    background-color: #00bcd4;
+    padding: 1% 2%;
+    border-radius: 50px;
 }
 
 #nr a{
@@ -194,7 +196,6 @@ nav:hover{
 @media only screen and (max-width: 1200px){
     .nav{
         width: 100%;
-        background-color: #00bcd4;
     }
     #nr{
         width: 50%;

@@ -4,13 +4,14 @@ color3:#00bcd4
 color4:linear-gradient(to top, #0f2027, #203a43, #2c5364);
 
 
-index✅
-missions
-images✅
-contact
-CENTRES
-UPDATES
-vision
-LAUNCHERS
-timeline
-leadership
+1. index✅
+2. missions
+3. images✅
+4. contact✅
+5. CENTRES✅
+6. UPDATES
+7. vision
+8. LAUNCHERS
+9. timeline✅
+10. leadership
+11. quize✅

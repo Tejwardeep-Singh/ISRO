@@ -1,0 +1,52 @@
+#vpage1{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0C1318;
+}
+#vpg1-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#vpage1 h1{
+    font-family: orbitron, sans-serif;
+    font-size: 24vh;
+    font-weight: 900;
+    color: #00bcd4;
+}
+#vision-container{
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+    flex-shrink: 0;
+}
+#vision-container h2{
+    font-size: 20vh;
+    font-family: rajdhani, sans-serif;
+    white-space: nowrap;
+    color: wheat;
+}
+
+@media only screen and (max-width: 1200px){
+    #vpage1{
+        height: fit-content;
+        margin-top:10vh;
+    }
+    #vision-container{
+        height:20vh;
+    }
+    #vpage1 h1{
+        font-size: 8vh;
+    }
+    #vision-container h2{
+    font-size: 6vh;
+    }
+}
