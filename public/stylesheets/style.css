@@ -666,7 +666,7 @@ color: #1b2735;
     object-position: center;
     height: 100%;
     border-radius: 50px;
-    border: solid white 4px;
+    box-shadow: 0 4px 10px #00bcd4;
 }
 
 #page8{
@@ -885,11 +885,7 @@ color: #1b2735;
     display: flex;
     justify-content: space-around;
     align-items: start;
-    background-image:url(images/earth-bg.jpg);
-    background-position:top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    margin-top: 2vh;
 }
 
 .fl{
@@ -926,10 +922,8 @@ color: #1b2735;
     height: 30vh;
     width: 30vw;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid #00bcd4 2px;
     border-radius: 20px;
 }
 
@@ -940,11 +934,14 @@ color: #1b2735;
 }
 
 .fr iframe{
-    height: 20vh;
+    height:100%;
+    width: 100%;
+    border-radius: 20px;
 }
 
 .fl span{
-    color: salmon;
+    color:wheat;
+    text-decoration: underline
 }
 
 #footer h4{
@@ -1112,6 +1109,7 @@ color: #1b2735;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 2vh;
 }
 #button{
     height: 100%;
@@ -1130,6 +1128,12 @@ color: #1b2735;
     color: black;
     text-decoration: none;
     font-family: 'Orbitron', sans-serif;
+}
+.horizontal-line{
+    height:0.5vh;
+    width: 50vw;
+    background-color: #00bcd4;
+    border-radius: 50px;
 }
 @media only screen and (max-width: 1200px){
 
@@ -1369,6 +1373,8 @@ color: #1b2735;
         height: auto;
         width: 100%;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
         gap: 2vw;
     }
     
@@ -1383,11 +1389,10 @@ color: #1b2735;
         width:90vw;
         justify-content: center;
         align-items: center;
-        border-radius: 0;
-        padding: 0.5%;
     }
     .fr iframe{
         width: 100%;
+        border-radius: 0;
     }
 
     #footer p{

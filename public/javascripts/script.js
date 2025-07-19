@@ -293,7 +293,7 @@ function page8(){
 page8()
 function page5(){
             gsap.to("#rockets",{
-                transform:"translateX(-100%)",
+                transform:"translateX(-80%)",
                 duration:8,
                 delay:1,
                 scrollTrigger:{

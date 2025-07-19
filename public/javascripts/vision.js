@@ -13,7 +13,7 @@
 
 function page1(){
             gsap.to("#vision-container h2",{
-                transform:"translateX(-400%)",
+                transform:"translateX(-200%)",
                 duration:15,
                 scrollTrigger:{
                     trigger:"#vision-container",

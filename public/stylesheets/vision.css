@@ -1,17 +1,18 @@
 #vpage1{
-    height: 100vh;
+    height:100vh;
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color:#0C1318;
+    margin-top: 10vh;
 }
 #vpg1-container{
     height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 #vpage1 h1{
@@ -29,12 +30,161 @@
     flex-shrink: 0;
 }
 #vision-container h2{
-    font-size: 20vh;
+    font-size: 25vh;
     font-family: rajdhani, sans-serif;
     white-space: nowrap;
-    color: wheat;
+    color:transparent;
+    -webkit-text-stroke: 0.5px wheat;
 }
-
+#vpage2{
+    height:fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0C1318;
+}
+#vpg2-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#vpage2 h1{
+    font-family: orbitron, sans-serif;
+    font-size: 24vh;
+    font-weight: 900;
+    color: #00bcd4;
+}
+#mission-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 8vh;
+}
+.anim{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+.anim h3{
+    font-size: 10vh;
+    font-weight: 400;
+    font-family: rajdhani,sans;
+    color:#2c5364;
+    white-space: nowrap;
+}
+#anim1{
+    animation-name: anim2;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+#anim2{
+    animation-name: anim1;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+#anim3{
+    animation-name: anim2;
+    animation-duration: 22s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+#anim4{
+    animation-name: anim1;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+#vpage3{
+    height:fit-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0C1318;
+}
+#vpg3-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+#vpage3 h1{
+    font-family: orbitron, sans-serif;
+    font-size: 24vh;
+    font-weight: 900;
+    color: #00bcd4;
+}
+#objective-box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:start;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 8vh;
+}
+#anim21{
+    animation-name: anim2;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+#anim22{
+    animation-name: anim1;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+#anim23{
+    animation-name: anim2;
+    animation-duration: 22s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+#anim24{
+    animation-name: anim1;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+}
+@keyframes anim1{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(80%);
+    }
+}
+@keyframes anim2{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-80%);
+    }
+}
 @media only screen and (max-width: 1200px){
     #vpage1{
         height: fit-content;
@@ -48,5 +198,20 @@
     }
     #vision-container h2{
     font-size: 6vh;
+    }
+    #vpage2 h1{
+        font-size: 8vh;
+    }
+    #vpage3 h1{
+        font-size: 8vh;
+    }
+    #mission-box{
+        gap: 2vh;
+    }
+    #objective-box{
+        gap: 2vh;
+    }
+    .anim h3{
+        font-size:3vh;
     }
 }
