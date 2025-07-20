@@ -49,10 +49,12 @@
         height: fit-content;
         flex-direction: column;
         gap: 0;
+        margin-top: 5vh;
     }
     #cpage1 svg{
         height: 40vh;
-        width: 100vw;
+        width: 80vw;
+        transform: scale(1.5);
     }
     #pg1-container{
         height:40vh;

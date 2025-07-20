@@ -103,7 +103,23 @@ function page4(){
         var box5a = document.querySelector("#chandrayaan h3")
         var box5 = document.querySelector("#chandrayaan")
         box5.addEventListener("click",function(){
-            if (box5a.style.display === 'flex') {
+            if (getComputedStyle(box5a).display=== 'flex') {
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"1%"
+                })
+                gsap.to(".missionBox img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header",{
+                    display:"none"
+                })
+                gsap.to(".missionBox h3",{
+                    display:"flex"
+                })
+                gsap.to("#chandrayaan h3",{
+                    display:"flex"
+                })
                 gsap.to("#chandrayaan",{
                     height:"100%",
                     padding:"5%"
@@ -117,7 +133,55 @@ function page4(){
                 gsap.to("#chandrayaan h3",{
                     display:"none"
                 })
-            } else {
+            }
+            else if (getComputedStyle(box5a).display === 'flex'&& window.innerWidth <= 1200) {
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"3%"
+                })
+                gsap.to(".missionBox img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header",{
+                    display:"none"
+                })
+                gsap.to(".missionBox h3",{
+                    display:"flex"
+                })
+                gsap.to("#chandrayaan",{
+                    height:"100%",
+                    padding:"5%"
+                })
+                gsap.to("#chandrayaan img",{
+                    display:"flex"
+                })
+                gsap.to(".mission-header",{
+                    display:"flex"
+                })
+                gsap.to("#chandrayaan h3",{
+                    display:"none"
+                })
+            }
+            else if (getComputedStyle(box5a).display === 'none'&& window.innerWidth <= 1200) {
+                gsap.to("#chandrayaan img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header",{
+                    display:"none"
+                })
+                gsap.to("#chandrayaan",{
+                    height:"10%",
+                    padding:"3%"
+                })
+                gsap.to("#chandrayaan h3",{
+                    display:"flex"
+                })
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"3%"
+                })
+            } 
+             else {
                 gsap.to("#chandrayaan img",{
                     display:"none"
                 })
@@ -136,7 +200,20 @@ function page4(){
         var box6a = document.querySelector("#mangalyaan h3")
         var box6 = document.querySelector("#mangalyaan ")
         box6.addEventListener("click",function(){
-            if (box6a.style.display === 'flex') {
+            if (getComputedStyle(box6a).display === 'flex'&& window.innerWidth >= 1200) {
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"1%"
+                })
+                gsap.to(".missionBox img",{
+                    display:"none",
+                })
+                gsap.to(".mission-header",{
+                    display:"none",
+                })
+                gsap.to(".missionBox h3",{
+                    display:"flex"
+                })
                 gsap.to("#mangalyaan",{
                     height:"100%",
                     padding:"5%"
@@ -150,7 +227,55 @@ function page4(){
                 gsap.to("#mangalyaan h3",{
                     display:"none"
                 })
-            } else {
+            }
+            else if (getComputedStyle(box6a).display === 'flex'&& window.innerWidth <= 1200) {
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"3%"
+                })
+                gsap.to(".missionBox img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header",{
+                    display:"none"
+                })
+                gsap.to(".missionBox h3",{
+                    display:"flex"
+                })
+                gsap.to("#mangalyaan",{
+                    height:"100%",
+                    padding:"5%"
+                })
+                gsap.to("#mangalyaan img",{
+                    display:"flex"
+                })
+                gsap.to(".mission-header2",{
+                    display:"flex"
+                })
+                gsap.to("#mangalyaan h3",{
+                    display:"none"
+                })
+            }
+            else if (getComputedStyle(box6a).display === 'none'&& window.innerWidth <= 1200) {
+                gsap.to("#mangalyaan img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header2",{
+                    display:"none"
+                })
+                gsap.to("#mangalyaan",{
+                    height:"10%",
+                    padding:"3%"
+                })
+                gsap.to("#mangalyaan h3",{
+                    display:"flex"
+                })
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"3%"
+                })
+            } 
+            else {
                 gsap.to("#mangalyaan img",{
                     display:"none"
                 })
@@ -169,7 +294,20 @@ function page4(){
         var box7a = document.querySelector("#aditya h3")
         var box7 = document.querySelector("#aditya ")
         box7.addEventListener("click",function(){
-            if (box7a.style.display === 'flex') {
+            if (getComputedStyle(box7a).display === 'flex') {
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"1%"
+                })
+                gsap.to(".missionBox img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header",{
+                    display:"none"
+                })
+                gsap.to(".missionBox h3",{
+                    display:"flex"
+                })
                 gsap.to("#aditya",{
                     height:"100%",
                     padding:"5%"
@@ -183,7 +321,55 @@ function page4(){
                 gsap.to("#aditya h3",{
                     display:"none"
                 })
-            } else {
+            }
+            else if (getComputedStyle(box7a).display === 'flex'&& window.innerWidth <= 1200) {
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"3%"
+                })
+                gsap.to(".missionBox img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header",{
+                    display:"none"
+                })
+                gsap.to(".missionBox h3",{
+                    display:"flex"
+                })
+                gsap.to("#aditya",{
+                    height:"100%",
+                    padding:"5%"
+                })
+                gsap.to("#aditya img",{
+                    display:"flex"
+                })
+                gsap.to(".mission-header3",{
+                    display:"flex"
+                })
+                gsap.to("#aditya h3",{
+                    display:"none"
+                })
+            }
+            else if (getComputedStyle(box7a).display === 'none'&& window.innerWidth <= 1200) {
+                gsap.to("#aditya img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header3",{
+                    display:"none"
+                })
+                gsap.to("#aditya",{
+                    height:"10%",
+                    padding:"3%"
+                })
+                gsap.to("#aditya h3",{
+                    display:"flex"
+                })
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"3%"
+                })
+            }  
+            else {
                 gsap.to("#aditya img",{
                     display:"none"
                 })
@@ -202,7 +388,20 @@ function page4(){
         var box8a = document.querySelector("#gaganyaan h3")
         var box8 = document.querySelector("#gaganyaan ")
         box8.addEventListener("click",function(){
-            if (box8a.style.display === 'flex') {
+            if (getComputedStyle(box8a).display === 'flex') {
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"1%"
+                })
+                gsap.to(".missionBox img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header",{
+                    display:"none"
+                })
+                gsap.to(".missionBox h3",{
+                    display:"flex"
+                })
                 gsap.to("#gaganyaan",{
                     height:"100%",
                     padding:"5%"
@@ -216,7 +415,54 @@ function page4(){
                 gsap.to("#gaganyaan h3",{
                     display:"none"
                 })
-            } else {
+            }
+            else if (getComputedStyle(box8a).display === 'flex'&& window.innerWidth <= 1200) {
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"3%"
+                })
+                gsap.to(".missionBox img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header",{
+                    display:"none"
+                })
+                gsap.to(".missionBox h3",{
+                    display:"flex"
+                })
+                gsap.to("#gaganyaan",{
+                    height:"100%",
+                    padding:"5%"
+                })
+                gsap.to("#gaganyaan img",{
+                    display:"flex"
+                })
+                gsap.to(".mission-header4",{
+                    display:"flex"
+                })
+                gsap.to("#gaganyaan h3",{
+                    display:"none"
+                })
+            }
+            else if (getComputedStyle(box8a).display === 'none'&& window.innerWidth <= 1200) {
+                gsap.to("#gaganyaan img",{
+                    display:"none"
+                })
+                gsap.to(".mission-header4",{
+                    display:"none"
+                })
+                gsap.to("#gaganyaan",{
+                    height:"10%",
+                    padding:"3%"
+                })
+                gsap.to("#gaganyaan h3",{
+                    display:"flex"
+                })
+                gsap.to(".missionBox",{
+                    height:"10%",
+                    padding:"3%"
+                })
+            }  else {
                 gsap.to("#gaganyaan img",{
                     display:"none"
                 })

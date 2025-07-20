@@ -40,10 +40,13 @@ main{
 
 #cpg2-container a{
     height:100%;
-    object-fit: cover;
-    object-position: center;
-    transition: transform 0.3s ease;
     cursor: pointer;
+}
+#cpg2-container i{
+    height: 100%;
+    width: fit-content;
+    color: #00bcd4;
+    font-size: 15vh;
 }
 
 #cpg2-container a:hover{
@@ -202,12 +205,40 @@ main{
         height:6vh;
     }
     #cpage1{
-        height: auto;
+        height:fit-content;
+        margin-bottom: 5vh;
     }
     #cpage1 h1{
-        font-size: 3.5vh;
+        font-size: 3vh;
     }
-    #cpg1-img{
-        display: none;
+    #contact-pg1{
+        height: fit-content;
     }
+    .contact-container{
+        height:fit-content;
+        margin: 10%;
+        width: 90vw;
+    }
+
+    .contact-inputs{
+        width: 300px;
+    }
+    .contact-left textarea{
+        width: 300px;
+    }
+    
+    .contact-left button{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
+        font-weight: 900;
+    }
+    #cpg2-container{
+        padding: 4% 0;
+    }
+    #cpg2-container i{
+    font-size: 5vh;
+}
 }
