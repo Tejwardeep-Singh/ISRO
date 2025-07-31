@@ -4,7 +4,7 @@ function navbar(){
         y:100,
         opacity:0,
         duration:0.8,
-        delay:2,
+        delay:1.5,
         stagger:0.2
     })
     tl.from("#page1 h3",{
@@ -40,18 +40,37 @@ function navbar(){
     }
 }
 navbar()
+function animateLines() {
+  const lines = document.querySelectorAll(".horizontal-line");
+  lines.forEach((line) => {
+    gsap.from(line, {
+      x: "-100%",
+      duration:1, // smoother
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: line, // fix here
+        scroller: "body",
+        start: "top 80%", // adjust to your layout
+        toggleActions: "play none none none",
+      },
+    });
+  });
+}
+animateLines()
 function page2(){
     var box1 = document.querySelector("#c1")
 
     box1.addEventListener("click",function(){
         gsap.to(".c1",{
-            bottom:"0"
+            bottom:"0",
+            ease: "power2.out",
         })
     })
 
     box1.addEventListener("mouseleave",function(){
         gsap.to(".c1",{
-            bottom:"-100%"
+            bottom:"-100%",
+            ease: "power2.in"
         })
     })
 
@@ -59,13 +78,15 @@ function page2(){
 
     box2.addEventListener("click",function(){
         gsap.to(".c2",{
-            bottom:"0"
+            bottom:"0",
+            ease: "power2.out"
         })
     })
 
     box2.addEventListener("mouseleave",function(){
         gsap.to(".c2",{
-            bottom:"-100%"
+            bottom:"-100%",
+            ease: "power2.in"
         })
     })
 
@@ -73,13 +94,15 @@ function page2(){
 
     box3.addEventListener("click",function(){
         gsap.to(".c3",{
-            bottom:"0"
+            bottom:"0",
+            ease: "power2.out"
         })
     })
     
     box3.addEventListener("mouseleave",function(){
         gsap.to(".c3",{
-            bottom:"-100%"
+            bottom:"-100%",
+            ease: "power2.in"
         })
     })
 
@@ -88,396 +111,412 @@ function page2(){
 
     box4.addEventListener("click",function(){
         gsap.to(".c4",{
-            bottom:"0"
+            bottom:"0",
+            ease: "power2.out"
         })
     })
 
     box4.addEventListener("mouseleave",function(){
         gsap.to(".c4",{
-            bottom:"-100%"
+            bottom:"-100%",
+            ease: "power2.in"
         })
     })
 }
 page2()
 function page4(){
-        var box5a = document.querySelector("#chandrayaan h3")
-        var box5 = document.querySelector("#chandrayaan")
-        box5.addEventListener("click",function(){
-            if (getComputedStyle(box5a).display=== 'flex') {
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"1%"
-                })
-                gsap.to(".missionBox img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header",{
-                    display:"none"
-                })
-                gsap.to(".missionBox h3",{
-                    display:"flex"
-                })
-                gsap.to("#chandrayaan h3",{
-                    display:"flex"
-                })
-                gsap.to("#chandrayaan",{
-                    height:"100%",
-                    padding:"5%"
-                })
-                gsap.to("#chandrayaan img",{
-                    display:"flex"
-                })
-                gsap.to(".mission-header1",{
-                    display:"flex"
-                })
-                gsap.to("#chandrayaan h3",{
-                    display:"none"
-                })
-            }
-            else if (getComputedStyle(box5a).display === 'flex'&& window.innerWidth <= 1200) {
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"3%"
-                })
-                gsap.to(".missionBox img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header",{
-                    display:"none"
-                })
-                gsap.to(".missionBox h3",{
-                    display:"flex"
-                })
-                gsap.to("#chandrayaan",{
-                    height:"100%",
-                    padding:"5%"
-                })
-                gsap.to("#chandrayaan img",{
-                    display:"flex"
-                })
-                gsap.to(".mission-header",{
-                    display:"flex"
-                })
-                gsap.to("#chandrayaan h3",{
-                    display:"none"
-                })
-            }
-            else if (getComputedStyle(box5a).display === 'none'&& window.innerWidth <= 1200) {
-                gsap.to("#chandrayaan img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header",{
-                    display:"none"
-                })
-                gsap.to("#chandrayaan",{
-                    height:"10%",
-                    padding:"3%"
-                })
-                gsap.to("#chandrayaan h3",{
-                    display:"flex"
-                })
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"3%"
-                })
-            } 
-             else {
-                gsap.to("#chandrayaan img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header1",{
-                    display:"none"
-                })
-                gsap.to("#chandrayaan",{
-                    height:"12%",
-                    padding:"1%"
-                })
-                gsap.to("#chandrayaan h3",{
-                    display:"flex"
-                })
-            } 
-        })
-        var box6a = document.querySelector("#mangalyaan h3")
-        var box6 = document.querySelector("#mangalyaan ")
-        box6.addEventListener("click",function(){
-            if (getComputedStyle(box6a).display === 'flex'&& window.innerWidth >= 1200) {
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"1%"
-                })
-                gsap.to(".missionBox img",{
-                    display:"none",
-                })
-                gsap.to(".mission-header",{
-                    display:"none",
-                })
-                gsap.to(".missionBox h3",{
-                    display:"flex"
-                })
-                gsap.to("#mangalyaan",{
-                    height:"100%",
-                    padding:"5%"
-                })
-                gsap.to("#mangalyaan img",{
-                    display:"flex"
-                })
-                gsap.to(".mission-header2",{
-                    display:"flex"
-                })
-                gsap.to("#mangalyaan h3",{
-                    display:"none"
-                })
-            }
-            else if (getComputedStyle(box6a).display === 'flex'&& window.innerWidth <= 1200) {
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"3%"
-                })
-                gsap.to(".missionBox img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header",{
-                    display:"none"
-                })
-                gsap.to(".missionBox h3",{
-                    display:"flex"
-                })
-                gsap.to("#mangalyaan",{
-                    height:"100%",
-                    padding:"5%"
-                })
-                gsap.to("#mangalyaan img",{
-                    display:"flex"
-                })
-                gsap.to(".mission-header2",{
-                    display:"flex"
-                })
-                gsap.to("#mangalyaan h3",{
-                    display:"none"
-                })
-            }
-            else if (getComputedStyle(box6a).display === 'none'&& window.innerWidth <= 1200) {
-                gsap.to("#mangalyaan img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header2",{
-                    display:"none"
-                })
-                gsap.to("#mangalyaan",{
-                    height:"10%",
-                    padding:"3%"
-                })
-                gsap.to("#mangalyaan h3",{
-                    display:"flex"
-                })
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"3%"
-                })
-            } 
+    gsap.from(".missionBox",{
+        y:-500,
+        opacity:0,
+        duration:3,
+        stagger:-1,
+        ease: "power2.out",
+        scrollTrigger:{
+            scroller:"body",
+            trigger:".missionBox",
+            start:"top 60%"
+        }
+
+    })
+
+    var box5a = document.querySelector("#chandrayaan h3")
+    var box5 = document.querySelector("#chandrayaan")
+    box5.addEventListener("click",function(){
+        if (getComputedStyle(box5a).display=== 'flex') {
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"1%"
+            })
+            gsap.to(".missionBox img",{
+                display:"none"
+            })
+            gsap.to(".mission-header",{
+                display:"none"
+            })
+            gsap.to(".missionBox h3",{
+                display:"flex"
+            })
+            gsap.to("#chandrayaan h3",{
+                display:"flex"
+            })
+            gsap.to("#chandrayaan",{
+                height:"100%",
+                padding:"5%"
+            })
+            gsap.to("#chandrayaan img",{
+                display:"flex"
+            })
+            gsap.to(".mission-header1",{
+                display:"flex"
+            })
+            gsap.to("#chandrayaan h3",{
+                display:"none"
+            })
+        }
+        else if (getComputedStyle(box5a).display === 'flex'&& window.innerWidth <= 1200) {
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"3%"
+            })
+            gsap.to(".missionBox img",{
+                display:"none"
+            })
+            gsap.to(".mission-header",{
+                display:"none"
+            })
+            gsap.to(".missionBox h3",{
+                display:"flex"
+            })
+            gsap.to("#chandrayaan",{
+                height:"100%",
+                padding:"5%"
+            })
+            gsap.to("#chandrayaan img",{
+                display:"flex"
+            })
+            gsap.to(".mission-header",{
+                display:"flex"
+            })
+            gsap.to("#chandrayaan h3",{
+                display:"none"
+            })
+        }
+        else if (getComputedStyle(box5a).display === 'none'&& window.innerWidth <= 1200) {
+            gsap.to("#chandrayaan img",{
+                display:"none"
+            })
+            gsap.to(".mission-header",{
+                display:"none"
+            })
+            gsap.to("#chandrayaan",{
+                height:"10%",
+                padding:"3%"
+            })
+            gsap.to("#chandrayaan h3",{
+                display:"flex"
+            })
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"3%"
+            })
+        } 
             else {
-                gsap.to("#mangalyaan img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header2",{
-                    display:"none"
-                })
-                gsap.to("#mangalyaan",{
-                    height:"10%",
-                    padding:"1%"
-                })
-                gsap.to("#mangalyaan h3",{
-                    display:"flex"
-                })
-            } 
-        })
-        var box7a = document.querySelector("#aditya h3")
-        var box7 = document.querySelector("#aditya ")
-        box7.addEventListener("click",function(){
-            if (getComputedStyle(box7a).display === 'flex') {
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"1%"
-                })
-                gsap.to(".missionBox img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header",{
-                    display:"none"
-                })
-                gsap.to(".missionBox h3",{
-                    display:"flex"
-                })
-                gsap.to("#aditya",{
-                    height:"100%",
-                    padding:"5%"
-                })
-                gsap.to("#aditya img",{
-                    display:"flex"
-                })
-                gsap.to(".mission-header3",{
-                    display:"flex"
-                })
-                gsap.to("#aditya h3",{
-                    display:"none"
-                })
-            }
-            else if (getComputedStyle(box7a).display === 'flex'&& window.innerWidth <= 1200) {
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"3%"
-                })
-                gsap.to(".missionBox img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header",{
-                    display:"none"
-                })
-                gsap.to(".missionBox h3",{
-                    display:"flex"
-                })
-                gsap.to("#aditya",{
-                    height:"100%",
-                    padding:"5%"
-                })
-                gsap.to("#aditya img",{
-                    display:"flex"
-                })
-                gsap.to(".mission-header3",{
-                    display:"flex"
-                })
-                gsap.to("#aditya h3",{
-                    display:"none"
-                })
-            }
-            else if (getComputedStyle(box7a).display === 'none'&& window.innerWidth <= 1200) {
-                gsap.to("#aditya img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header3",{
-                    display:"none"
-                })
-                gsap.to("#aditya",{
-                    height:"10%",
-                    padding:"3%"
-                })
-                gsap.to("#aditya h3",{
-                    display:"flex"
-                })
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"3%"
-                })
-            }  
-            else {
-                gsap.to("#aditya img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header3",{
-                    display:"none"
-                })
-                gsap.to("#aditya",{
-                    height:"10%",
-                    padding:"1%"
-                })
-                gsap.to("#aditya h3",{
-                    display:"flex"
-                })
-            } 
-        })
-        var box8a = document.querySelector("#gaganyaan h3")
-        var box8 = document.querySelector("#gaganyaan ")
-        box8.addEventListener("click",function(){
-            if (getComputedStyle(box8a).display === 'flex') {
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"1%"
-                })
-                gsap.to(".missionBox img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header",{
-                    display:"none"
-                })
-                gsap.to(".missionBox h3",{
-                    display:"flex"
-                })
-                gsap.to("#gaganyaan",{
-                    height:"100%",
-                    padding:"5%"
-                })
-                gsap.to("#gaganyaan img",{
-                    display:"flex"
-                })
-                gsap.to(".mission-header4",{
-                    display:"flex"
-                })
-                gsap.to("#gaganyaan h3",{
-                    display:"none"
-                })
-            }
-            else if (getComputedStyle(box8a).display === 'flex'&& window.innerWidth <= 1200) {
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"3%"
-                })
-                gsap.to(".missionBox img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header",{
-                    display:"none"
-                })
-                gsap.to(".missionBox h3",{
-                    display:"flex"
-                })
-                gsap.to("#gaganyaan",{
-                    height:"100%",
-                    padding:"5%"
-                })
-                gsap.to("#gaganyaan img",{
-                    display:"flex"
-                })
-                gsap.to(".mission-header4",{
-                    display:"flex"
-                })
-                gsap.to("#gaganyaan h3",{
-                    display:"none"
-                })
-            }
-            else if (getComputedStyle(box8a).display === 'none'&& window.innerWidth <= 1200) {
-                gsap.to("#gaganyaan img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header4",{
-                    display:"none"
-                })
-                gsap.to("#gaganyaan",{
-                    height:"10%",
-                    padding:"3%"
-                })
-                gsap.to("#gaganyaan h3",{
-                    display:"flex"
-                })
-                gsap.to(".missionBox",{
-                    height:"10%",
-                    padding:"3%"
-                })
-            }  else {
-                gsap.to("#gaganyaan img",{
-                    display:"none"
-                })
-                gsap.to(".mission-header4",{
-                    display:"none"
-                })
-                gsap.to("#gaganyaan",{
-                    height:"10%",
-                    padding:"1%"
-                })
-                gsap.to("#gaganyaan h3",{
-                    display:"flex"
-                })
-            } 
-        })
+            gsap.to("#chandrayaan img",{
+                display:"none"
+            })
+            gsap.to(".mission-header1",{
+                display:"none"
+            })
+            gsap.to("#chandrayaan",{
+                height:"12%",
+                padding:"1%"
+            })
+            gsap.to("#chandrayaan h3",{
+                display:"flex"
+            })
+        } 
+    })
+    var box6a = document.querySelector("#mangalyaan h3")
+    var box6 = document.querySelector("#mangalyaan ")
+    box6.addEventListener("click",function(){
+        if (getComputedStyle(box6a).display === 'flex'&& window.innerWidth >= 1200) {
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"1%"
+            })
+            gsap.to(".missionBox img",{
+                display:"none",
+            })
+            gsap.to(".mission-header",{
+                display:"none",
+            })
+            gsap.to(".missionBox h3",{
+                display:"flex"
+            })
+            gsap.to("#mangalyaan",{
+                height:"100%",
+                padding:"5%"
+            })
+            gsap.to("#mangalyaan img",{
+                display:"flex"
+            })
+            gsap.to(".mission-header2",{
+                display:"flex"
+            })
+            gsap.to("#mangalyaan h3",{
+                display:"none"
+            })
+        }
+        else if (getComputedStyle(box6a).display === 'flex'&& window.innerWidth <= 1200) {
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"3%"
+            })
+            gsap.to(".missionBox img",{
+                display:"none"
+            })
+            gsap.to(".mission-header",{
+                display:"none"
+            })
+            gsap.to(".missionBox h3",{
+                display:"flex"
+            })
+            gsap.to("#mangalyaan",{
+                height:"100%",
+                padding:"5%"
+            })
+            gsap.to("#mangalyaan img",{
+                display:"flex"
+            })
+            gsap.to(".mission-header2",{
+                display:"flex"
+            })
+            gsap.to("#mangalyaan h3",{
+                display:"none"
+            })
+        }
+        else if (getComputedStyle(box6a).display === 'none'&& window.innerWidth <= 1200) {
+            gsap.to("#mangalyaan img",{
+                display:"none"
+            })
+            gsap.to(".mission-header2",{
+                display:"none"
+            })
+            gsap.to("#mangalyaan",{
+                height:"10%",
+                padding:"3%"
+            })
+            gsap.to("#mangalyaan h3",{
+                display:"flex"
+            })
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"3%"
+            })
+        } 
+        else {
+            gsap.to("#mangalyaan img",{
+                display:"none"
+            })
+            gsap.to(".mission-header2",{
+                display:"none"
+            })
+            gsap.to("#mangalyaan",{
+                height:"10%",
+                padding:"1%"
+            })
+            gsap.to("#mangalyaan h3",{
+                display:"flex"
+            })
+        } 
+    })
+    var box7a = document.querySelector("#aditya h3")
+    var box7 = document.querySelector("#aditya ")
+    box7.addEventListener("click",function(){
+        if (getComputedStyle(box7a).display === 'flex') {
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"1%"
+            })
+            gsap.to(".missionBox img",{
+                display:"none"
+            })
+            gsap.to(".mission-header",{
+                display:"none"
+            })
+            gsap.to(".missionBox h3",{
+                display:"flex"
+            })
+            gsap.to("#aditya",{
+                height:"100%",
+                padding:"5%"
+            })
+            gsap.to("#aditya img",{
+                display:"flex"
+            })
+            gsap.to(".mission-header3",{
+                display:"flex"
+            })
+            gsap.to("#aditya h3",{
+                display:"none"
+            })
+        }
+        else if (getComputedStyle(box7a).display === 'flex'&& window.innerWidth <= 1200) {
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"3%"
+            })
+            gsap.to(".missionBox img",{
+                display:"none"
+            })
+            gsap.to(".mission-header",{
+                display:"none"
+            })
+            gsap.to(".missionBox h3",{
+                display:"flex"
+            })
+            gsap.to("#aditya",{
+                height:"100%",
+                padding:"5%"
+            })
+            gsap.to("#aditya img",{
+                display:"flex"
+            })
+            gsap.to(".mission-header3",{
+                display:"flex"
+            })
+            gsap.to("#aditya h3",{
+                display:"none"
+            })
+        }
+        else if (getComputedStyle(box7a).display === 'none'&& window.innerWidth <= 1200) {
+            gsap.to("#aditya img",{
+                display:"none"
+            })
+            gsap.to(".mission-header3",{
+                display:"none"
+            })
+            gsap.to("#aditya",{
+                height:"10%",
+                padding:"3%"
+            })
+            gsap.to("#aditya h3",{
+                display:"flex"
+            })
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"3%"
+            })
+        }  
+        else {
+            gsap.to("#aditya img",{
+                display:"none"
+            })
+            gsap.to(".mission-header3",{
+                display:"none"
+            })
+            gsap.to("#aditya",{
+                height:"10%",
+                padding:"1%"
+            })
+            gsap.to("#aditya h3",{
+                display:"flex"
+            })
+        } 
+    })
+    var box8a = document.querySelector("#gaganyaan h3")
+    var box8 = document.querySelector("#gaganyaan ")
+    box8.addEventListener("click",function(){
+        if (getComputedStyle(box8a).display === 'flex') {
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"1%"
+            })
+            gsap.to(".missionBox img",{
+                display:"none"
+            })
+            gsap.to(".mission-header",{
+                display:"none"
+            })
+            gsap.to(".missionBox h3",{
+                display:"flex"
+            })
+            gsap.to("#gaganyaan",{
+                height:"100%",
+                padding:"5%"
+            })
+            gsap.to("#gaganyaan img",{
+                display:"flex"
+            })
+            gsap.to(".mission-header4",{
+                display:"flex"
+            })
+            gsap.to("#gaganyaan h3",{
+                display:"none"
+            })
+        }
+        else if (getComputedStyle(box8a).display === 'flex'&& window.innerWidth <= 1200) {
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"3%"
+            })
+            gsap.to(".missionBox img",{
+                display:"none"
+            })
+            gsap.to(".mission-header",{
+                display:"none"
+            })
+            gsap.to(".missionBox h3",{
+                display:"flex"
+            })
+            gsap.to("#gaganyaan",{
+                height:"100%",
+                padding:"5%"
+            })
+            gsap.to("#gaganyaan img",{
+                display:"flex"
+            })
+            gsap.to(".mission-header4",{
+                display:"flex"
+            })
+            gsap.to("#gaganyaan h3",{
+                display:"none"
+            })
+        }
+        else if (getComputedStyle(box8a).display === 'none'&& window.innerWidth <= 1200) {
+            gsap.to("#gaganyaan img",{
+                display:"none"
+            })
+            gsap.to(".mission-header4",{
+                display:"none"
+            })
+            gsap.to("#gaganyaan",{
+                height:"10%",
+                padding:"3%"
+            })
+            gsap.to("#gaganyaan h3",{
+                display:"flex"
+            })
+            gsap.to(".missionBox",{
+                height:"10%",
+                padding:"3%"
+            })
+        }  else {
+            gsap.to("#gaganyaan img",{
+                display:"none"
+            })
+            gsap.to(".mission-header4",{
+                display:"none"
+            })
+            gsap.to("#gaganyaan",{
+                height:"10%",
+                padding:"1%"
+            })
+            gsap.to("#gaganyaan h3",{
+                display:"flex"
+            })
+        } 
+    })
 }
 page4()
 function page6(){
