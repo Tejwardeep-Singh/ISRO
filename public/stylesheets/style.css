@@ -1530,4 +1530,7 @@ color: #1b2735;
     #pg3-line{
         margin: 1vh 0 0.5vh 0;
     }
+    .index-footer h3{
+        font-size: 0.1vh;
+    }
 }

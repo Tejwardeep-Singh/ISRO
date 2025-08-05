@@ -519,26 +519,49 @@ function page4(){
     })
 }
 page4()
-function page6(){
-    var vid=document.querySelector("#page6 video");
-    vid.addEventListener("mouseenter",function(){
+function page6() {
+  const vid = document.querySelector("#page6 video");
+
+  // For desktop: play on hover
+  if (!("ontouchstart" in window)) {
+    vid.addEventListener("mouseenter", () => {
+      vid.play();
+    });
+
+    vid.addEventListener("mouseleave", () => {
+      vid.pause();
+    });
+  }
+
+  // For mobile: tap to play/pause, second tap to mute/unmute
+  else {
+    let tappedOnce = false;
+
+    vid.addEventListener("touchstart", (e) => {
+      if (!tappedOnce) {
         vid.play();
-    })
-    vid.addEventListener("mouseleave",function(){
+        tappedOnce = true;
+
+        // Reset tap after 500ms to distinguish single tap from double tap
+        setTimeout(() => {
+          tappedOnce = false;
+        }, 500);
+      } else {
+        vid.muted = !vid.muted;
+        tappedOnce = false;
+      }
+    });
+
+    // Optional: Pause video when touch ends (not always recommended)
+    vid.addEventListener("touchend", () => {
+      setTimeout(() => {
         vid.pause();
-    })
-    var vid=document.querySelector("#page6 video");
-    vid.addEventListener("touchstart",function(){
-        vid.play();
-    })
-    vid.addEventListener("touchend",function(){
-        vid.pause();
-    })
-    vid.addEventListener("click",function(){
-        vid.muted=!vid.muted;
-    })
+      }, 1000); // small delay allows muted toggle to work first
+    });
+  }
 }
-page6()
+page6();
+
 function page7(){
         gsap.from(".member h2,.member h3,.member img",{
             opacity:0,
