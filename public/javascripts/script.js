@@ -560,7 +560,7 @@ function page6() {
     });
   }
 }
-page6();
+
 
 function page7(){
         gsap.from(".member h2,.member h3,.member img",{

@@ -1534,3 +1534,39 @@ color: #1b2735;
         font-size: 0.1vh;
     }
 }
+
+@media only screen and (max-height: 550px){
+
+    #page1 h1{
+        font-size:10vw;
+        gap: 2vw;
+        letter-spacing:0;
+    }
+    #page1 h3{
+        font-size: 6vh;
+    }
+    #circle a{
+        font-size:6vh;
+    }
+    .stripe{
+        top: -3%;
+    }
+    .rocket img{
+        border-radius:5px;
+    }
+    #sun{
+        height:50%;
+    }
+    #orbit1{
+        height: 100%;
+        top:-5%;
+    }
+    #orbit2{
+        height: 100%;
+        top: -30%;
+    }
+    #planet1{
+        height: 20px;
+        width: 20px;
+    }
+}
