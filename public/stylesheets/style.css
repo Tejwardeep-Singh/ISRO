@@ -1287,14 +1287,17 @@ color: #1b2735;
         padding: 4% 10%;
         height: auto;
         justify-content: space-between;
-        margin-top:5vh;
+        margin:5vh 0;
+    }
+    #pg4-container{
+        height: auto;
     }
     #page4 h1{
         font-size: 12vw;
     }
     #mission{
         justify-content: center;
-        gap: 2vh;
+        gap: 3vh;
     }
     .missionBox{
         height:10%;
