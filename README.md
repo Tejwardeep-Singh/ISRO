@@ -1,6 +1,9 @@
 # 🚀 RawJet
 An Interactive ISRO-Inspired Space Experience
 <p align="center"> <b>Modern UI • Smooth Animations • Immersive Storytelling</b><br><br> <img src="https://img.shields.io/badge/HTML5-Structure-orange?style=flat-square&logo=html5"/> <img src="https://img.shields.io/badge/CSS3-Styling-blue?style=flat-square&logo=css3"/> <img src="https://img.shields.io/badge/JavaScript-Logic-yellow?style=flat-square&logo=javascript"/> <img src="https://img.shields.io/badge/GSAP-Animations-green?style=flat-square"/> <img src="https://img.shields.io/badge/Responsive-Yes-brightgreen?style=flat-square"/> </p>
+
+![home](assets/home.png)
+
 🌌 About the Project
 
 RawJet is a space-themed interactive website inspired by ISRO, designed to deliver a cinematic and engaging user experience using modern frontend technologies.
@@ -58,7 +61,6 @@ cd rawjet
 
 # 📸 Preview
 
-![home](assets/home.png)
 ![updates](assets/updates.png)
 ![mission](assets/mission.png)
 ![centre](assets/centre.png)
